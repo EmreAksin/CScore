@@ -1,0 +1,82 @@
+name: cscore
+description: "CS2 canlı maç skorları, turnuva bilgileri ve takım detayları"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # UI Paketleri
+  cupertino_icons: 
+  flutter_svg: 
+  cached_network_image:
+  shimmer: 
+  intl: 
+  flutter_spinkit: 
+  google_fonts: 
+  flutter_native_splash: ^2.3.10
+  
+  # Durum Yönetimi
+  provider: 
+  
+  # Veri Tabanı ve API
+  dio: 
+  shared_preferences: 
+  sqflite: 
+  path_provider: 
+  # Önbellek Yönetimi
+  flutter_cache_manager: 
+  
+  # Yardımcı Araçlar
+  logger: 
+  url_launcher: 
+  connectivity_plus: 
+  font_awesome_flutter: 
+  image: 
+  path: 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/Saydam zeminde logo3000x3000.png
+    - assets/logo3000x3000.png
+    - assets/Android tam ekran1920x1080psplashscreen.jpg
+    - assets/Google Play Store600x600.jpg
+    - assets/translations/
+
+# Flutter native splash yapılandırması
+flutter_native_splash:
+  color: "#000000"
+  image: "assets/Android tam ekran1920x1080psplashscreen.jpg"
+  fullscreen: true
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#000000"
+    icon_background_color: "#000000"
+    image: "assets/Android tam ekran1920x1080psplashscreen.jpg"
+
+# Uygulama ikonu yapılandırması
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo3000x3000.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/logo3000x3000.png"
+  remove_alpha_ios: true
